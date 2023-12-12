@@ -1,11 +1,7 @@
 # these imports aren't being used might not need them remove later if so
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
-
-
-
 from django.shortcuts import render, redirect, get_object_or_404 
-
 from django.views import generic
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
@@ -42,15 +38,12 @@ class registerView(FormView):
 # i know this is probably bad practise to mix classes and functions but time is limited
 
 def register(response):
-
   if response.method == "POST":
     form = RegisterForm(response.POST)
     if form.is_valid():
       form.save()
     return redirect("/login")
-  
   else:
     form = RegisterForm()
 
-
-  return render(response, "views/register.html", {"form":form})
+  return render(response, "views/registration/register.html", {"form":form})
