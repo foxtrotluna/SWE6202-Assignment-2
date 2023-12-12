@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # setting the css framework we are using
-CRISPY_TEMPLATE_PACK="bootstrap4"
+CRISPY_TEMPLATE_PACK="bootstrap5"
 
 # redirect user after logging in or logging out
 LOGIN_REDIRECT_URL = "/"
@@ -44,8 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sustainrbr',
+    'bootstrap5',
     'crispy_forms',
-    'crispy_bootstrap4',
+    'crispy_bootstrap5',
+    'chartjs',
 ]
 
 MIDDLEWARE = [
