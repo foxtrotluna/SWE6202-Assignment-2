@@ -15,6 +15,8 @@ class Profile(models.Model):
 class Product(models.Model):
   price = models.FloatField(null=True)
   name = models.CharField(max_length=255, null=True)
+  description = models.CharField(max_length=3000, null=True)
+  imagelink = models.CharField(max_length=255, null=True)
 
 class Basket(models.Model):
   profile = models.ForeignKey(Profile, on_delete=models.DO_NOTHING, null=True)

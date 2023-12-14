@@ -1,0 +1,35 @@
+[
+    {
+        "model": "sustainrbr.Product",
+        "pk": 1,
+        "fields": {
+            "price": 5,
+            "name": "Apple",
+            "description": "this is just an apple",
+            "imagelink": null
+        }
+    },
+
+    {
+        "model": "sustainrbr.Product",
+        "pk": 2,
+        "fields": {
+            "price": 4,
+            "name": "Banana",
+            "description": "this is a bananer",
+            "imagelink": "https://picsum.photos/id/5/1200/800"
+        }
+    },
+
+    {
+        "model": "sustainrbr.Product",
+        "pk": 3,
+        "fields": {
+            "price": 7.5,
+            "name": "Pear",
+            "description": "Just a Pear",
+            "imagelink": "https://picsum.photos/id/12/1200/800"
+        }
+    }
+
+]
